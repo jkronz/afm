@@ -1,5 +1,5 @@
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
+<div class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -9,14 +9,18 @@
       </button>
       <%= link_to 'Allicance Fund Management', about_path, class: 'navbar-brand' %>
     </div>
-    <div class="collapse navbar-collapse">
+    <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <%= navigation_tab 'About', about_path %>
         <%= navigation_tab 'Team', team_path %>
         <%= navigation_tab 'Borrowers', borrowers_path %>
         <%= navigation_tab 'Investors', investors_path %>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <%= navigation_tab 'Contact', team_path %>
+      </ul>
     </div>
     <!--/.nav-collapse -->
   </div>
+  <!--/.container-fluid -->
 </div>
