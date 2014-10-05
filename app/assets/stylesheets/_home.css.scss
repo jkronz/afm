@@ -1,0 +1,285 @@
+@import 'variables';
+@import 'bootstrap';
+
+p {
+  margin-bottom: 40px;
+}
+
+.navbar {
+  text-transform: uppercase;
+}
+
+.anchor:before {
+  display: inline-block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  @include text-hide();
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  background: image-url('white_badge.png');
+  width: 209px;
+  height: 141px;
+}
+
+.navbar-default.affix-top {
+  @include transition(all 0.5s ease);
+  background: transparent none;
+  border: 0;
+  .navbar-nav {
+    > li, > li.active {
+      > a, > a:hover, > a:active, > a:visited, > a:focus {
+        color: #fff;
+        font-weight: normal;
+        background: transparent none;
+      }
+    }
+    > li.active {
+      > a, > a:hover, > a:active, > a:visited, > a:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.navbar-default.affix {
+  @include transition(all 0.5s ease);
+  background: rgba(51, 51, 51, 0.8) none;
+  border: 0;
+  .navbar-nav {
+    > li, > li.active {
+      > a, > a:hover, > a:active, > a:visited, > a:focus {
+        @include transition(all 0.3s ease);
+        color: #fff;
+        font-weight: normal;
+        background: transparent none;
+      }
+    }
+    > li.active {
+      > a, > a:hover, > a:active, > a:visited, > a:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.navbar-default .navbar-toggle {
+  background: rgba(51, 51, 51, 0.8) none;
+  .icon-bar {
+    background-color: #FFFFFF;
+  }
+}
+
+.navbar-default.affix-top .navbar-collapse.in, .navbar-default.affix .navbar-collapse.in {
+  background: rgba(51, 51, 51, 0.8) none;
+  border: 0;
+}
+
+section {
+  padding: 0 0 60px;
+}
+
+.content-wrapper {
+  margin-top: 50px;
+}
+
+.about {
+  background-color: $logo-red;
+  color: #f7f7f7;
+}
+
+body {
+  position: relative;
+}
+
+section.hero {
+  background: image-url('bkg_hero.jpg') no-repeat;
+  background-size: cover;
+  height: 766px;
+  margin-bottom: 0;
+  h1 {
+    margin-top: 250px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: #ffffff;
+    font-weight: 300;
+  }
+  .aside {
+    margin-top: 160px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.base-list {
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  i {
+    display: block;
+    width: 62px;
+    height: 58px;
+    @include hide-text();
+    margin: 16px auto 0;
+    &.one {
+      background: image-url('icon_1.png') no-repeat;
+    }
+    &.two {
+      background: image-url('icon_2.png') no-repeat;
+    }
+    &.three {
+      background: image-url('icon_3.png') no-repeat;
+    }
+  }
+  .base-item {
+    float: left;
+    box-sizing: border-box;
+    width: 32%;
+    text-align: center;
+    padding: 0 4px;
+    color: $brand-success;
+    margin-bottom: 10px;
+  }
+  aside p {
+    margin: 20px auto 0;
+    width: 70%;
+    clear: both;
+    font-size: $font-size-small;
+    color: $gray-light;
+    text-align: center;
+  }
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p.question {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+em {
+  color: $brand-success;
+}
+
+.lede {
+  font-size: $font-size-large;
+}
+
+#summary-wrapper {
+  background: #FFFFFF;
+}
+
+.sep1 {
+  background: image-url('bkg_clouds.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+}
+
+.sep2 {
+  background: image-url('bkg_about.jpg') no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 250px;
+}
+
+#impact-investing-wrapper {
+  background: #fff none;
+  .highlight {
+    color: $brand-success;
+  }
+}
+
+#cra-investing-wrapper {
+  background: #DC0F48 none;
+  color: #fff;
+  .highlight {
+    color: rgba(52, 3, 14, 1);
+  }
+  aside {
+    font-size: $font-size-small;
+  }
+}
+
+#afm-team-wrapper {
+  .highlight {
+    color: $brand-primary;
+  }
+}
+
+.partners {
+  padding-top: 91px;
+  background: rgba(231, 227, 228, 1);
+  h3 {
+    text-align: right;
+    margin-top: 12px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .partners h3 {
+    text-align: left;
+  }
+}
+.map {
+  max-height: 332px;
+  overflow-y: hidden;
+  img {
+    width: 100%;
+  }
+}
+#contact {
+  .highlight {
+    color: $brand-success;
+  }
+  aside {
+    font-size: $font-size-small;
+  }
+}
+
+footer {
+  padding: 60px 0 20px;
+  background: #292929 none;
+  color: #fff;
+  a, a:hover, a:active, a:focus, a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.tag {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 72px;
+  width: 68px;
+  margin-left: -40px;
+  margin-top: -32px;
+  &.blue {
+    background-image: image-url('blue_ribbon.png');
+  }
+  &.green {
+    background-image: image-url('green_ribbon.png');
+  }
+  &.red {
+    background-image: image-url('red_ribbon.png');
+  }
+  &.aside {
+    height: 100px;
+    width: 200px;
+    margin-top: -60px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-position: left bottom;
+  }
+}

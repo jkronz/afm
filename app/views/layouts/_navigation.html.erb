@@ -1,26 +1,28 @@
-<div class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <%= link_to 'Allicance Fund Management', about_path, class: 'navbar-brand' %>
+<div class="col-md-12">
+  <div class="navbar navbar-default navbar-fixed-top affix-top"
+       data-spy="affix" data-offset-top="756"
+       role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Alliance Fund Management</a>
+      </div>
+      <div class="navbar-collapse collapse spy-nav">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#summary" class="anchor-link">Summary</a></li>
+          <li><a href="#impact-investing" class="anchor-link">Impact Investing</a></li>
+          <li><a href="#cra-investing" class="anchor-link">CRA Investing</a></li>
+          <li><a href="#afm-team" class="anchor-link">The Team</a></li>
+          <li><a href="#contact" class="anchor-link">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
     </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <%= navigation_tab 'About', about_path %>
-        <%= navigation_tab 'Team', team_path %>
-        <%= navigation_tab 'Borrowers', borrowers_path %>
-        <%= navigation_tab 'Investors', investors_path %>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <%= navigation_tab 'Contact', team_path %>
-      </ul>
-    </div>
-    <!--/.nav-collapse -->
   </div>
-  <!--/.container-fluid -->
 </div>
+
