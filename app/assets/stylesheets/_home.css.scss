@@ -164,6 +164,7 @@ h3 {
 p.question {
   margin-bottom: 10px;
   text-transform: uppercase;
+  color: $highlight-color;
 }
 
 em {
@@ -179,20 +180,19 @@ em {
 }
 
 .sep1 {
-  background: image-url('bkg_clouds.jpg') no-repeat;
+  background: image-url('bkg_clouds.jpg') no-repeat center center;
+}
+.sep2 {
+  background: image-url('bkg_mountains.jpg') no-repeat center center;
+}
+.sep3 {
+  background: image-url('bkg_road.jpg') no-repeat center center;
+}
+.sep {
   background-size: cover;
   background-attachment: fixed;
   height: 250px;
 }
-
-.sep2 {
-  background: image-url('bkg_about.jpg') no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  background-position: center center;
-  height: 250px;
-}
-
 #impact-investing-wrapper {
   background: #fff none;
   .highlight {
@@ -201,7 +201,7 @@ em {
 }
 
 #cra-investing-wrapper {
-  background: #DC0F48 none;
+  background: $logo-red none;
   color: #fff;
   .highlight {
     color: rgba(52, 3, 14, 1);
@@ -219,7 +219,7 @@ em {
 
 .partners {
   padding-top: 91px;
-  background: rgba(231, 227, 228, 1);
+  background: #E6E5E3;
   h3 {
     text-align: right;
     margin-top: 12px;

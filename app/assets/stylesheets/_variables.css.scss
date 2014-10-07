@@ -1,7 +1,7 @@
-$logo-red: #D04546;
+$logo-red: #e02234;
 $logo-blue: #335583;
 $logo-green: #9ABE5A;
-
+$highlight-color: #4d9a1e;
 @mixin transition($tran) {
   -webkit-transition: $tran;
   -moz-transition: $tran;
