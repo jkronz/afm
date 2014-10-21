@@ -54,12 +54,12 @@
   </div>
 </section>
 <div class="sep sep1"></div>
-<section id="impact-investing-wrapper" >
+<section id="impact-investing-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
         <div id="impact-investing" class="anchor tag green"></div>
-        <h3 ><span class="highlight">Impact</span> Investing</h3>
+        <h3><span class="highlight">Impact</span> Investing</h3>
 
         <p class="lede">The AFM Impact Bond Program&trade; &ldquo;IBP&rdquo; is a funding platform designed to
           help assure that the nation&rsquo;s existing affordable multifamily rental housing
@@ -129,13 +129,29 @@
 
         <p class="lede">
           Alliance Fund Management, LLC is an Atlanta, GA based organization whose principals are
-          steeped in affordable multi-family rental housing.  The Principals at AFM have extensive
+          steeped in affordable multi-family rental housing. The Principals at AFM have extensive
           industry relationships and decades of financial and development experience in
           transactions utilizing tax-exempt and taxable bonds as well as low income housing tax
           credits (LIHTC), local and federal “soft money” programs and a diverse catalog of
           multifamily loan programs nationwide.
         </p>
       </div>
+    </div>
+    <div class="row">
+      <aside class="col-md-offset-3 col-sm-offset-4 col-md-7 col-sm-8">
+        <dl>
+          <dt>Peter Wasserman</dt>
+          <dd>CEO</dd>
+          <dt>Peter H. Wasserman</dt>
+          <dd>President</dd>
+          <dt>Michael L. Kolodner</dt>
+          <dd>CFO &amp; Director of Finance</dd>
+          <dt>David E. Wasserman</dt>
+          <dd>VP Business Development</dd>
+          <dt>David M. Perloe</dt>
+          <dd>VP Business Development</dd>
+        </dl>
+      </aside>
     </div>
   </div>
 </section>
@@ -147,7 +163,7 @@
       </div>
       <div class="col-md-7 col-sm-8">
         <%= image_tag 'cfg_logo.jpg', class: 'util-responsive-image' %>
-        <h4>CFG Capital Markets, LLC</h4>
+        <h5>CFG Capital Markets, LLC</h5>
 
         <p>&ldquo;CFGCM&rdquo; is a FINRA regulated municipal bond underwriter. CFGCM through its wholly owned
           entity, CFG Financial Services Companies, LLC (&ldquo;CFG&rdquo;) represents full-service, comprehensive
@@ -157,7 +173,7 @@
           since its inception.
         </p>
         <%= image_tag 'trf_logo.jpg', class: 'util-responsive-image' %>
-        <h4>The Reinvestment Fund</h4>
+        <h5>The Reinvestment Fund</h5>
 
         <p>&ldquo;The Reinvestment Fund&rdquo; is a Community Development Financial Institution (&ldquo;CDFI&rdquo;)
           that manages $738 million in capital and has made over $1.3 billion in community investments, financing
@@ -177,10 +193,24 @@
         <div id="contact" class="anchor tag green"></div>
         <h3><span class="highlight">Contact</span></h3>
 
-        <p>Our office is located at 4779 S Atlanta Road SE, Suite 200, Atlanta, GA 30339</p>
-
-        <p>If you have a particular deal that you would like to discuss, please contact David M. Perloe at
-          770-874-8800 x102 or via email.</p>
+        <p>Our office is located at 4779 S Atlanta Road SE, Suite 200, Atlanta, GA 30339<br>
+          <%= link_to 'Google Maps', 'https://www.google.com/maps/place/4779+S+Atlanta+Rd+SE+%23200,+Smyrna,+GA+30080/@33.8375433,-84.4758961,17z/data=!4m2!3m1!1s0x88f51a8921eaa57b:0x5fdb6fc8140c473d',
+                      class: 'btn btn-sm btn-primary',
+                      target: '_blank' %>
+        </p>
+        <dl>
+          <dt>Phone</dt>
+          <dd>770-874-8800</dd>
+          <dt>Fax</dt>
+          <dd>770-874-7788</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 ">
+        <p class="divided">If you have a particular deal that you would like to discuss, please contact David M. Perloe at
+          770-874-8800 x102 or via <%= mail_to 'info@afm123.com' do %>email
+          <%- end %>.</p>
 
         <p>For additional information please contact Peter Wasserman at 770-874-8800 x101</p>
         <aside>
@@ -194,22 +224,22 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-2 col-md-offset-2 col-sm-3">
+      <div class="col-md-3 col-md-offset-2 col-sm-4">
+        <h4>Location</h4>
         <address>
           4779 Atlanta Road SE<br>
           Suite 200<br>
           Atlanta, GA 30339<br>
         </address>
       </div>
-      <div class="col-md-2 col-sm-3">
+      <div class="col-md-2 col-sm-4">
+        <h4>Contact</h4>
         T: <a class='tel' href="tel:+17708748800">770-874-8800</a><br>
-        F: 770-874-7788
-      </div>
-      <div class="col-md-2 col-sm-3">
-        Contact<br>
+        F: 770-874-7788<br>
         <%= mail_to 'info@afm123.com' %>
       </div>
-      <div class="col-md-2 col-sm-3">
+      <div class="col-md-3 col-sm-4 util-center">
+        <%= image_tag 'missionmarkets_logo.png', class: 'responsive-image' %>
       </div>
     </div>
   </div>

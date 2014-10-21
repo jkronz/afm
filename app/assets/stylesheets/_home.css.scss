@@ -67,6 +67,7 @@ p {
     }
   }
 }
+
 .navbar-default .navbar-toggle {
   background: rgba(51, 51, 51, 0.8) none;
   .icon-bar {
@@ -182,17 +183,21 @@ em {
 .sep1 {
   background: image-url('bkg_clouds.jpg') no-repeat center center;
 }
+
 .sep2 {
   background: image-url('bkg_mountains.jpg') no-repeat center center;
 }
+
 .sep3 {
   background: image-url('bkg_road.jpg') no-repeat center center;
 }
+
 .sep {
   background-size: cover;
   background-attachment: fixed;
   height: 250px;
 }
+
 #impact-investing-wrapper {
   background: #fff none;
   .highlight {
@@ -207,6 +212,7 @@ em {
     color: rgba(52, 3, 14, 1);
   }
   aside {
+    border-top: 1px solid #fff;
     font-size: $font-size-small;
   }
 }
@@ -214,6 +220,27 @@ em {
 #afm-team-wrapper {
   .highlight {
     color: $brand-primary;
+  }
+
+  dl {
+    border-left: 6px solid $brand-lowlight;
+    padding-left: 12px;
+    margin-bottom: 40px;
+  }
+  dt {
+    font-size: $font-size-large;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  dd {
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    color: $brand-primary;
+    font-weight: 700;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -223,6 +250,7 @@ em {
   h3 {
     text-align: right;
     margin-top: 12px;
+    margin-bottom: 26px;
   }
 
 }
@@ -232,6 +260,7 @@ em {
     text-align: left;
   }
 }
+
 .map {
   max-height: 332px;
   overflow-y: hidden;
@@ -239,12 +268,30 @@ em {
     width: 100%;
   }
 }
-#contact {
+
+#contact-wrapper {
   .highlight {
     color: $brand-success;
   }
   aside {
     font-size: $font-size-small;
+  }
+  dl {
+    @include clearfix;
+  }
+  dt {
+    font-weight: 300;
+    float: left;
+    clear: both;
+    display: inline-block;
+    width: 80px;
+  }
+  dd {
+    display: inline-block;
+    float: left;
+  }
+  p {
+    margin-bottom: 20px;
   }
 }
 
@@ -255,6 +302,13 @@ footer {
   a, a:hover, a:active, a:focus, a:visited {
     color: #fff;
     text-decoration: none;
+  }
+  h4 {
+    color: $highlight-color;
+    text-transform: uppercase;
+  }
+  img {
+    margin-top: 40px;
   }
 }
 
@@ -282,4 +336,8 @@ footer {
     text-transform: uppercase;
     background-position: left bottom;
   }
+}
+.divided {
+  border-top: 1px solid $brand-lowlight;
+  padding-top: 28px;
 }
